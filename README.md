@@ -1,5 +1,3 @@
-# Python Socket Practice
-
 # Usage Guide
 
 ### Python version 3 or higher is required to continue with this guide
