@@ -2,8 +2,9 @@
 
 # Usage Guide
 
-## Python version 3 or higher is required to continue with this guide
+### Python version 3 or higher is required to continue with this guide
 
+Get the lastest version of Python: https://www.python.org/downloads/
 <br/>
 
 ## Inside of the project directory
