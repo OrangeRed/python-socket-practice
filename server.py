@@ -19,10 +19,12 @@ with socket(AF_INET, SOCK_STREAM) as server_sock:
             client_sock, client_addr = server_sock.accept()
             request = client_sock.recv(1024).decode()
 
-            # Split request data into headers and extract filename from request data
+            # Split request data into headers and extract filename from headers
             headers = request.split('\n')
             filename = headers[0].split()[1]
-            if filename[0] == "/":
+
+            # remove leading '/' to allow for URL variables
+            if filename[0] == '/' and len(filename) > 1:
                 filename = filename[1:]
 
             # Try to open the filename extracted from request data 
